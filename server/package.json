@@ -14,8 +14,8 @@
     "express": "4.17.1",
     "pg": "7.11.0",
     "sequelize": "5.10.0"
-  }
+  },
   "devDependencies": {
     "nodemon": "1.19.1"
-  }	
+  }
 }
