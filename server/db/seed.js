@@ -1,8 +1,6 @@
 const { dbSync, NjBus } = require('./index');
-const fs = require('fs');
 
-const busTable = fs
-  .readFileSync('../data/nj_transit_bus/stops.txt', 'utf-8')
+const busTable = require('../data/nj_transit_bus/stops')
   .split('\n')
   .slice(1)
   .map(row => row.split(','));
