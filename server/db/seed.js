@@ -23,4 +23,4 @@ dbSync(true)
     )
   )
   .then(() => console.log('SEED COMPLETE'))
-  .catch(e => console.log(e));
+  .catch(e => console.error(e));
