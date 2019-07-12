@@ -4,4 +4,6 @@ const { dbSync, NjBus } = require('./db');
 
 const PORT = process.env.PORT || 3000;
 
-dbSync().then(() => app.listen(PORT, () => console.log("I'm Listening...")));
+dbSync()
+  .then(() => app.listen(PORT, () => console.log("I'm Listening...")))
+  .catch(e => console.log(e));
